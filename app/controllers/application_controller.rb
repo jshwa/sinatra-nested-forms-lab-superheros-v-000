@@ -2,7 +2,7 @@ require 'sinatra/base'
 
 class App < Sinatra::Base
 
-    set :views, Proc.new { File.join(root, "../app/views/") }
+    set :views, Proc.new { File.join(root, "../app/") }
 
     get '/' do
       erb :super_hero.erb
